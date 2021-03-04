@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<title></title>
+
+</style>
+<body onload='sliderone()'>
+
+
+<div >
+  <img id='slider'  style="width:800px;height:500px;" />
+   <img src='images/prv12.png' id='prv 'style="position:relative;height:40px;width:40px;right:55%;bottom:200px;" onclick="prvious()"/>
+  <img src='images/next12.png' id='nxt 'style="position:relative;height:40px;width:40px;right:10%;bottom:200px;" onclick="next()"/>
+
+  </div>
+
+<script>
+  var i=0;
+  var a=['images/volleyball.jpg','images/sliderone.jpeg','images/slider1.jpg','images/foot.jpeg'];
+  function sliderone(){
+
+    if(i>a.length-1)
+    {
+      i=0;
+    }
+
+    var x=document.getElementById('slider');
+    x.src=a[i];
+    ++i;
+
+    window.setTimeout('sliderone()',6001);
+     }
+
+function prvious(){
+
+
+window.setTimeout('sliderone()',100);
+
+};
+
+function next(){
+  window.setTimeout('sliderone()',100);
+
+};
+
+
+
+</script>
+
+
+
+</body>
+</html>

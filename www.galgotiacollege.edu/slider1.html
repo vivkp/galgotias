@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Galgotia Sports Department</title>
+
+
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+
+     <script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+</head>
+
+<body>
+          <div class="banner-image">
+
+
+               <div class="flexslider">
+                <ul class="slides">
+                      <li><img src="images/sliderone.jpeg" alt="Interbranch" title=""></li>
+
+                        <li><img src="images/hockey.jpg" alt="Hockey" title=""></li>
+                        <li>
+
+                        <img src="images/banner12.jpg" alt="Best College in NCR" title="">
+                        </li>
+
+                         <li><img src="images/football.jpg" alt="Football" title=""></li>
+                         <li><img src="images/volleyball.jpg" alt="Volleyball" title=""></li>
+                         <li><img src="images/slider1.jpg" alt="team" title=""></li>
+
+                        <li>
+                        <img src="images/banner14.jpg" alt="Top Engineering Colleges in NCR" title="">
+                        </li>
+                    </ul>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
